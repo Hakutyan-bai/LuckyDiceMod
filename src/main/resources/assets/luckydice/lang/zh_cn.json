@@ -1,0 +1,6 @@
+{
+  "item.luckydice.lucky_dice": "幸运骰子",
+  "item.luckydice.lucky_dice.desc": "掷出你的命运！",
+  "luckydice.message.roll": "你掷出了: %d!",
+  "itemGroup.luckydice_tab": "幸运骰子"
+}

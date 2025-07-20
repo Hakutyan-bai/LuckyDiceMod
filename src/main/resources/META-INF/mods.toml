@@ -1,0 +1,22 @@
+modLoader="javafml"
+loaderVersion="[47,)" # 支持Forge 47.1.0及以上
+license="All rights reserved"
+issueTrackerURL="https://example.com/issues"
+
+[[mods]]
+modId="luckydice"
+version="1.0.0"
+displayName="Lucky Dice Mod"
+authors="Hakutyan_bai"
+description='''
+添加一个有趣的幸运骰子物品
+可以掷出各种随机效果
+'''
+
+# 依赖配置
+[[dependencies.luckydice]]
+modId="forge"
+mandatory=true
+versionRange="[47.1.0,)"
+ordering="NONE"
+side="BOTH"
