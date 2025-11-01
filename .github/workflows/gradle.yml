@@ -36,6 +36,16 @@ jobs:
     - name: Make gradlew executable
       run: chmod +x ./gradlew
 
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: LuckyDiceMod                 # 下载时看到的压缩包名字
+        path: |
+          build/libs/*.jar             # 一般 Forge/Fabric 生成的 jar 都在这
+          !build/libs/*-sources.jar    # 可选，排除源码 jar
+        retention-days: 30            # 保留 30 天（可省，默认 90）
+
+
     # NOTE: The Gradle Wrapper is the default and recommended way to run Gradle (https://docs.gradle.org/current/userguide/gradle_wrapper.html).
     # If your project does not have the Gradle Wrapper configured, you can use the following configuration to run Gradle with a specified version.
     #
